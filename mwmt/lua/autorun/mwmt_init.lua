@@ -7,8 +7,6 @@ hook.Add("Initialize", "mwmt_INIT", function()
         AddCSLuaFile("mwmt/mw_movement.lua")
         AddCSLuaFile("mwmt/mw_laying.lua")
         AddCSLuaFile("mwmt/mw_sprint.lua")
-		AddCSLuaFile("mwmt/mw_slide.lua")
-		AddCSLuaFile("mwmt/mw_slide_legs.lua")
 	end
 
     include("mwmt/config.lua")
@@ -16,8 +14,6 @@ hook.Add("Initialize", "mwmt_INIT", function()
     include("mwmt/mw_movement.lua")
     include("mwmt/mw_laying.lua")
     include("mwmt/mw_sprint.lua")
-    include("mwmt/mw_slide.lua")
-	include("mwmt/mw_slide_legs.lua")
 
 	print("[MWMT] MW19 Movement loaded!")
 end)
@@ -27,7 +23,6 @@ if CLIENT then
         if VManip then
             VManip:RegisterAnim("sprint_anim", {["model"]="test.mdl",["lerp_peak"]=0.4,["lerp_speed_in"]=1,["lerp_speed_out"]=2,["lerp_curve"]=1,["holdtime"]=0.25,["speed"]=1})
         end
-		if VMLegs then VMLegs:RegisterAnim("slide",{["model"]="c_vmaniplegs.mdl",["speed"]=1.5,["forwardboost"]=-14,["upwardboost"]=0}) end
     end)
 
     hook.Add("PopulateToolMenu", "mwmt_options_MENU", function()
@@ -91,11 +86,6 @@ if CLIENT then
 			})
 
 			panel:AddControl("Checkbox", {
-				Label = "Enable Slide",
-				Command = "mwmt_slide_enabled"
-			})
-
-			panel:AddControl("Checkbox", {
 				Label = "Enable Tactical Sprint",
 				Command = "mwmt_sprint_enabled"
 			})
@@ -108,26 +98,6 @@ if CLIENT then
 			panel:AddControl("Checkbox", {
 				Label = "Enable crouch-jump",
 				Command = "mwmt_crouch_jump",
-			})
-		end)
-
-		spawnmenu.AddToolMenuOption("Options", "[MWMT] Settings", "mwmt_opts_slide", "Slide", "", "", function(panel)
-			panel:SetName("Slide")
-            panel:AddControl("Checkbox", {
-				Label = "Enable Slide cooldown",
-				Command = "mwmt_slide_cooldown_enabled"
-			})
-
-			panel:AddControl("slider", {
-				type = "float",
-				Label = "Slide duration",
-				Command = "mwmt_slide_duration"
-			})
-
-            panel:AddControl("slider", {
-				type = "float",
-				Label = "Slide speed multiplier",
-				Command = "mwmt_slide_speed"
 			})
 		end)
 
