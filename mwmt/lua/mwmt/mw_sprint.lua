@@ -28,7 +28,7 @@ if CLIENT then
     ["mg_sierra552"] = Vector(-3,-3,-10), ["mg_g3a3"] = Vector(-3,-3,-13), ["mg_falpha"] = Vector(-3,-4,-10), ["mg_scharlie"] = Vector(-3,-3,-11), ["mg_falima"] = Vector(-3,-4,-9), ["mg_galima"] = Vector(-4,-3,-10),
     ["mg_chimera"] =  Vector(-3,-4,-11), ["mg_mcbravo"] =  Vector(-1.5,-1.5,-13), ["mg_balpha27"] = Vector(-3,-3,-11), ["mg_valpha"] = Vector(-3,-3,-10), ["mg_anovember94"] = Vector(-5,-2,-10),
     ["mg_sbeta"] = Vector(0,-5,-13), ["mg_sksierra"] = Vector(-5,-2,-12), ["mg_acharlied"] = Vector(0,-8,-18), ["mg_kilo98"] = Vector(-1.5,-5,-16), ["mg_mike14"] = Vector(-3,-3,-10), ["mg_crossbow"] = Vector(-5,-7,-13),
-    ["mg_mike25"] = Vector(-5,-3,-12), ["mg_pcharlie9"] = Vector(-5,-3,-13), ["mg_taq_555"] = Vector(-1.5,-1.5,-11), ["mg_mike2011"] = Vector(-3,-7,-15), ["mg_swhiskey"] = Vector(-3,-5,-18),
+    ["mg_mike25"] = Vector(-5,-3,-12), ["mg_pcharlie9"] = Vector(-5,-3,-13), ["mg_taq_555"] = Vector(-1.5,-1.5,-11), ["mg_mike2011"] = Vector(-1.5,-7,-14), ["mg_swhiskey"] = Vector(-3,-5,-18),
     ["mg_mw2deagle"] = Vector(-4,-5,-16), ["mg_mpapa5"] = Vector(-5,-3,-12), ["mg_secho"] = Vector(-1.5,-5,-10), ["mg_mpapax"] = Vector(-1.5,-3,-16), ["mg_augolf"] = Vector(-4,-5,-13), 
     ["mg_mwiip220"] = Vector(-2,-4,-16), ["mg_delta"] = Vector(-3,-3,-11), ["mg_dpapa12"] = Vector(-5,-5,-6), ["mg_mike26"] = Vector(-1,-5,-10), ["mg_romeo870"] = Vector(-2,-5,-12),
     ["mg_charlie725"] = Vector(0,-3,-11), ["mg_charlie725_1"] = Vector(0,-3,-11), ["mg_aalpha12"] = Vector(-2,-5,-7), ["mg_xmike5"] = Vector(-1.5,-3,-16), ["mg_foxtrot2000"] = Vector(-3,-3,-11)}
